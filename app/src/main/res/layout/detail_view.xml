@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_weight="0" >
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/original_title"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poster"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/overview"
+            android:textStyle="normal"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/original_title" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/overview"
+            android:isIndicator="true"
+            android:stepSize="0.1"
+            android:rating="0.0"/>
+
+        <TextView
+            android:id="@+id/playIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/video_title"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:drawableLeft="@drawable/play"
+            android:layout_below="@+id/ratingBar"/>
+
+
+        <ImageView
+            android:id="@+id/poweredby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/powered_by"
+            android:layout_below="@+id/playIcon" />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-7013341411729923/3875418684"
+            android:layout_below="@+id/poweredby" >
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</ScrollView>

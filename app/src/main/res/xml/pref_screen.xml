@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/pref_sort_key"
+        android:title="@string/title_list_preference"
+        android:entries="@array/pref_sort_entries"
+        android:entryValues="@array/pref_sort_entry_values"
+        android:defaultValue="@string/pref_sort_default"
+        android:dialogTitle="@string/dialog_title_sort" />
+
+    <ListPreference
+        android:key="@string/pref_lang_key"
+        android:title="@string/title_lang_preference"
+        android:entries="@array/pref_lang_entries"
+        android:entryValues="@array/pref_lang_entry_values"
+        android:defaultValue="@string/pref_lang_default"
+        android:dialogTitle="@string/dialog_title_lang" />
+
+</PreferenceScreen>

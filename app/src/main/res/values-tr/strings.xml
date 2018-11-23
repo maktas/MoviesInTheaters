@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vizyondakiler</string>
+    <string name="hello_world">Merhaba!</string>
+    <string name="action_search">Arama</string>
+    <string name="search_hint">Film ara</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="action_about">Hakkında</string>
+    <string name="action_sort">Sıralama</string>
+    <string name="list_title">İyi Eğlenceler</string>
+    <string name="video_title">Fragmanı İzle</string>
+    <string name="title_activity_detail">Film Detayı</string>
+    <string name="title_list_preference">Sıralamayı Değiştir</string>
+    <string name="dialog_title_sort">Sıralamayı Değiştir</string>
+    <array name="pref_sort_entries">
+        <item>İzleyici Puanı</item>
+        <item>Popülarite</item>
+        <item>Yeni Çıkanlar</item>
+    </array>
+
+    <string name="action_lang">Dil</string>
+    <string name="title_lang_preference">Dil</string>
+    <string name="dialog_title_lang">Dili Seçin</string>
+
+</resources>
